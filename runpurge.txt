@@ -1,0 +1,1 @@
+purgecss --css output/app.css --content index.html --output output/output.css

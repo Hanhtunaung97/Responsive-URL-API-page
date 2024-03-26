@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-size-base: 1.125rem;
+$navbar-nav-link-padding-x: 1.3rem;
+$navbar-brand-font-size: 2rem;
+$btn-padding-x: 1.3rem;
+$btn-padding-y: 0.5rem;
+$primary: hsl(180, 66%, 49%);
+// $secondary:hsl(0, 0%, 75%);
+$body-color: hsl(257, 7%, 63%);
+$headings-color: hsl(255, 11%, 22%);
+$dark: hsl(257, 27%, 26%);
+$nav-light-color: rgb(154, 153, 181);
+$btn-link-color: rgb(154, 153, 181);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  //   xxl: 1320px,
+);
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+  8: $spacer * 12,
+);
+$theme-colors: (
+  "primary":    $primary,
+  // "secondary":  $secondary,
+  // "success":    $success,
+  // "info":       $info,
+  // "warning":    $warning,
+  // "danger":     $danger,
+  // "light":      $light,
+  "dark":       $dark
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.hero {
+  background-image: url(../images/illustration-working.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 600px;
+}
+.shorten {
+  background-image: url(../images/bg-shorten-desktop.svg);
+  transform: translateY(-50%);
+}
+.statistic {
+  background-color: rgb(240, 241, 246);
+}
+.brand-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  margin-bottom: -35px;
+}
+.home-cta {
+  background-color: $dark;
+  background-image: url(../images/bg-boost-desktop.svg);
+}
+footer {
+  background-color: hsl(260, 8%, 14%);
+}
+@include media-breakpoint-down(lg) {
+  .hero {
+    background-size: 450px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .hero {
+    background-size: 250px;
+  }
+}
+
